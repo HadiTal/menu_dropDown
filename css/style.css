@@ -1,0 +1,155 @@
+body {
+    direction: rtl;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: font-yekhan-normal;
+    src: url("../fonts/IRANYekanLight.eot"), url("../fonts/IRANYekanLight.otf"), url("../fonts/IRANYekanLight.svg"), url("../fonts/IRANYekanLight.ttf"), url("../fonts/IRANYekanLight.ttf"), url("../fonts/IRANYekanLight.woff");
+}
+
+@font-face {
+    font-family: font-dana;
+    src: url(../font-2/dana-demibold.eot), url('../font-2/dana-demibold.otf'), url("../font-2/dana-demibold.svg"), url("../font-2/dana-demibold.ttf"), url("../font-2/dana-demibold.woff")
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    padding: 1em;
+    font-family: font-yekhan-normal;
+    font-weight: bold;
+}
+
+li li a {
+    text-decoration: none;
+    font-family: font-yekhan-normal;
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand :nth-child(1) {
+    width: 100px;
+    padding-top: 2%;
+}
+
+.brand :nth-child(2) {
+    font-family: font-dana;
+    font-size: 1em;
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+#nav-toggle {
+    position: absolute;
+    right: -70px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+    background-color: #000;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+    background-color: #000;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.nav-list-mobile {
+    display: NONE;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-header {
+    font-size: 1.3rem;
+    padding: 0.5em;
+}
